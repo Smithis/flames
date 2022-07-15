@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Happy Valentine&#39;s Day / CSS Love letter/ card</title>
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container"><h2><a href="/{{code}}">share this link to your friends</a> 
+<br>
+<br>
+<br>
+<a href="/s/{{code}}">To View your friends what is entered></a>
+</h2></div>
+<div class="container">  
+
+<div class="valentines">
+  <div class="envelope"></div>
+  <div class="front"></div>
+  <div class="card">
+  <div class="text">{{ n }}</br> {{ val }}</br>{{ c }} </div>
+  <div class="heart"</div>
+  </div>
+  
+  <div class="hearts">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+  </div>
+</div>
+</div>
+<div class="shadow">
+</div>
+
+
+
+<!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="{% static 'script1.js' %}"></script>
+
+</body>
+</html>

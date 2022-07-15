@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - love proposal</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+  <title>love you</title>
+</head>
+<body>
+  
+
+<div class="bg_heart" style="background-image: url('{% static 'image.jpg' %}');'">
+</div>
+
+<div class="container" style="top:90px;left:90px">
+
+<div class="container center">
+<form action="/" method="POST">
+{% csrf_token %}
+  <div class="form-group">
+    <label>enter your name</label>
+    <input type="type" name="name" class="form-control" placeholder="charan">
+  </div>
+  <div class="form-group">
+    <label>enter your crush name</label>
+    <input type="type" name="crush" class="form-control" placeholder="smithi">
+  </div>
+   <div class="form-group">
+   <input type="hidden" name="hide" value="{{ ur }}">
+    <button class="btn btn-danger">submit</button>
+  </div>
+
+  
+
+
+</form>
+</div>
+
+
+  </div>
+  
+
+
+
+<!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="{% static 'script.js' %}"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
